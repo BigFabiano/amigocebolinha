@@ -15,8 +15,8 @@ namespace amigocebolinha
             Console.WriteLine("Digite uma frase para seu amiguinho: ");
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             string cebolinha = Console.ReadLine();
-            string textoDigitado = cebolinha.Replace("r","l");
-            textoDigitado = textoDigitado.Replace("R","L");
+            string textoDigitado = cebolinha.Replace("r","l").Replace("rr","l");
+            textoDigitado = textoDigitado.Replace("R","L").Replace("RR","L");
             Console.WriteLine(textoDigitado);
             Console.ResetColor();
            
